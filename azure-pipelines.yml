@@ -28,10 +28,10 @@ steps:
     ConnectionDetailsSelection: 'Credentials'
     apiId: '8e2d2d096212bd9cc3d241a7085fcd27'
     apiKey: '4c1158a04b9340a39b464e98cb46fdd14d5c72f2870cc5da2cf71eef0336ec69f9eee9734359f4af1354720978f3d6de4c0e4557eb0758c81ba7b5804367d886'
-    veracodeAppProfile: 'AIA SG - COAST'
+    veracodeAppProfile: 'AIA SG - Chatbot'
     version: '$(build.buildNumber)'
     filepath: '$(build.artifactstagingdirectory)'
-    createSandBox: false
+    createSandBox: true
     createProfile: false
     failTheBuildIfVeracodeScanDidNotInitiate: false
     scanStatusCheckInterval: '30'
