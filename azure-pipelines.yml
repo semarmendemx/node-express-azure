@@ -24,6 +24,12 @@ steps:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
     includeRootFolder: false
 
+
+- script: 'curl -sSL https://download.sourceclear.com/ci.sh | sh'
+  displayName: 'CMD - Source Clear'
+  env:
+    SRCCLR_API_TOKEN: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY3Mjc5LCJleHAiOjE1OTYxMzc1NTYsImF1dGhvcml0aWVzIjoiQUdFTlQiLCJqdGkiOiI3YTA1Y2E4Zi04NWIwLTQ5ZjQtODg3MS01OThhNGE0MzgzYjgiLCJjbGllbnRfaWQiOiIiLCJzY29wZSI6W119.GmbYJaf1xcfk5XqjeY461pROsjBy4bCeR6PzHe92HArVzjc4XL9otCQxB6_x4pY0hIMdTsBlzDlmEj1NOPsDiHF8f5Aol4dQaSjH-aCmaTFhQcmhoV17f0-DfO55Do_2u_SzNdU66WpC9CiiadXtCE_cZiOTpbBVQhEHo6Lfv7U
+
 - task: PublishBuildArtifacts@1
   displayName: 'Publish artifacts: drop'
   
